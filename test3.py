@@ -10,3 +10,4 @@ def odd(list_in):
         i = i + 1
     return o_list
 print(odd(numbers))
+[x for x in ten_numbers if x%2 != 0]
