@@ -4,10 +4,9 @@ def odd(in_list):
     o_list = []
     while i < len(in_list):
         d = (in_list[i]%2)
-        if (d != 0):
+        if d == 1:
             # current functionality limited by this line
             o_list = o_list + [in_list[i]]
-            i = i + 1 
-            continue
+        i = i + 1 
     return o_list
 print(odd(numbers_in))

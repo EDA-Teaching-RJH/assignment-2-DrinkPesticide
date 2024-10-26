@@ -3,8 +3,10 @@ def odd(list_in):
     i = 0
     o_list = []
     while i < len(list_in):
-        print(list_in[i]%2)
-        o_list = o_list + [list_in[i]]
+        d = (list_in[i]%2)
+        print(d)
+        if d == 1: 
+            o_list = o_list + [list_in[i]]
         i = i + 1
     return o_list
 print(odd(numbers))
