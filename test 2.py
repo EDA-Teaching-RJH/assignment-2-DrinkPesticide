@@ -1,4 +1,13 @@
-numbers_1 = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3]
-numbers_2 = [7, 8]
-zumba = ([x for x in numbers_1 if x != 1].sort) + numbers_2
-print(zumba)
+numbers_in = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3]
+def odd(in_list):
+    i = 0
+    o_list = []
+    while i < len(in_list):
+        d = (in_list[i]%2)
+        if (d != 0):
+            # current functionality limited by this line
+            o_list = o_list + [in_list[i]]
+            i = i + 1 
+            continue
+    return o_list
+print(odd(numbers_in))
